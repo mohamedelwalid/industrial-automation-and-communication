@@ -3,6 +3,10 @@
 The MQTT laboratory used a Raspberry Pi and DS18B20 temperature sensor to
 demonstrate lightweight publish/subscribe communication.
 
+The publisher and subscriber were reconstructed from my submission records and
+include a later dry-run option so the message flow can be checked without the
+original sensor hardware.
+
 ```text
 DS18B20 → Raspberry Pi publisher → MQTT broker → subscriber
 ```

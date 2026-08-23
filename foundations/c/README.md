@@ -20,5 +20,6 @@ Selected work from the introductory systems-programming laboratories.
 - linked-list data structures; and
 - wall-clock time compared with CPU-intensive busy waiting.
 
-The `concurrency/` directory contains compact versions of the process, thread
-and mutex examples from the submitted work.
+The `concurrency/` directory contains compact, retyped versions of the process,
+thread and mutex exercises documented in my submission records. They preserve
+the concepts demonstrated in the course but are not untouched submission files.

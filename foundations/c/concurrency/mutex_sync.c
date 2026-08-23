@@ -1,8 +1,10 @@
 #include <pthread.h>
+#include <stdatomic.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <unistd.h>
 
-static int running = 1;
+static atomic_bool running = true;
 static int var_1 = 0;
 static int var_2 = 0;
 static pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
@@ -10,7 +12,7 @@ static pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 static void *writer(void *arg)
 {
     (void)arg;
-    while (running) {
+    while (atomic_load(&running)) {
         pthread_mutex_lock(&mutex);
         ++var_1;
         var_2 = var_1;
@@ -28,7 +30,7 @@ static void *reader(void *arg)
         pthread_mutex_unlock(&mutex);
         usleep(100000);
     }
-    running = 0;
+    atomic_store(&running, false);
     return NULL;
 }
 

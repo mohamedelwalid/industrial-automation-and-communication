@@ -20,7 +20,7 @@ industrial middleware exposes control and telemetry to higher-level software.
 | 02 | Processes, threads and memory | `fork()`, POSIX threads, semaphores, mutexes, race conditions, pointers, dynamic allocation and error handling | C, POSIX, pthreads |
 | 03 | TCP/IP socket communication | Client/server design, ports, addressing, socket I/O and communication between two computers | C, TCP/IP, Ubuntu VM, Raspberry Pi |
 | 04 | PLC programming | Combinational machine logic, I/O mapping and conveyor control | Ladder Diagram, Beremiz, OpenPLC |
-| 05 | Sequential control | Steps, transitions, timers and continuous production-line sequencing | SFC, Beremiz, OpenPLC |
+| 05 | Sequential control | Steps, transitions, timers and a repeating production-line sequence | SFC, Beremiz, OpenPLC |
 | 06 | OPC UA | Server connection, address-space browsing, method calls, subscriptions and CSV event logging | Python, `asyncua`, OPC UA |
 | 07 | MQTT telemetry | Sensor acquisition and publisher/subscriber messaging | Python, Paho MQTT, Mosquitto, Raspberry Pi, DS18B20 |
 | 08 | ROS2 communication | Nodes, topics, services, actions, launch files and graph inspection | ROS2, Turtlesim, `rqt_graph`, Python |
@@ -124,7 +124,7 @@ drilling and transfer mechanisms.
 
 - **Ladder Diagram:** Boolean control logic and documented I/O mapping.
 - **Sequential Function Chart:** steps, transitions and timers for a repeating
-  process that can accommodate workpieces at different stages of the line.
+  production-line sequence.
 
 The original submitted schematics and variable tables are stored under
 [`plc/`](plc/). Generated Structured Text and modified PLCopen projects are not
@@ -177,9 +177,13 @@ four original PLC evidence images are present.
 
 ## Scope and authorship
 
-This repository contains my submitted work, selected source files and concise
-technical documentation. Lecturer-provided source packages are excluded. When
-an assignment used a supplied system, the README explains my own task and the
-skills demonstrated without claiming authorship of the surrounding framework.
+This repository is a documented portfolio version of my course work. The PLC
+schematics and variable tables are original submission evidence. Some C,
+TCP/IP and MQTT source files were retyped or reconstructed from my submission
+records after the original source archive became incomplete; they are included
+to preserve the implementations and concepts I worked with, not presented as
+untouched submission files. Lecturer-provided source packages are excluded.
+When an assignment used a supplied system, the relevant README identifies my
+own task without claiming authorship of the surrounding framework.
 
 This is educational work and not production-ready control software.

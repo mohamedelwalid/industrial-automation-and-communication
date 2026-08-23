@@ -3,6 +3,10 @@
 This laboratory introduced socket-based communication in C. A client and
 server were first run locally in Ubuntu, then across two computers:
 
+The source in this folder was reconstructed from my submission records after
+the original source archive became incomplete, then compiled and tested again
+locally for this portfolio.
+
 ```text
 macOS → UTM → Ubuntu client → TCP/IP → Raspberry Pi server
 ```
