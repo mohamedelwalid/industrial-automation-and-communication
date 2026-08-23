@@ -1,98 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
-  <title id="title">TPK4128 course learning path</title>
-  <desc id="desc">A flowchart from Linux and C foundations through networking, PLC programming, industrial protocols and ROS2.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">TPK4128 course learning map</title>
+  <desc id="desc">A grouped technical flowchart showing the progression from Linux and C foundations through PLC control to industrial communication and ROS2.</desc>
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#03070d"/>
-      <stop offset="1" stop-color="#09162b"/>
-    </linearGradient>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
-      <path d="M0 0L10 5L0 10Z" fill="#38bdf8"/>
-    </marker>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#64748b"/></marker>
     <style>
-      .label{font:600 14px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:2px;fill:#38bdf8}
-      .title{font:600 28px Inter,Arial,sans-serif;fill:#f4f4f5}
-      .body{font:400 16px Inter,Arial,sans-serif;fill:#a1a1aa}
-      .step{font:600 19px Inter,Arial,sans-serif;fill:#f4f4f5}
-      .tech{font:400 14px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#a1a1aa}
-      .box{fill:#0b111a;stroke:#263241;stroke-width:1.5}
-      .num{font:600 12px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#38bdf8}
-      .line{stroke:#38bdf8;stroke-width:2;fill:none;marker-end:url(#arrow)}
+      .page-title{font:700 42px Inter,Arial,sans-serif;fill:#111827}.eyebrow{font:700 14px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:2.4px;fill:#0284c7}.subtitle{font:400 18px Inter,Arial,sans-serif;fill:#64748b}.group-title{font:700 18px Inter,Arial,sans-serif;fill:#1f2937}.group-note{font:400 13px Inter,Arial,sans-serif;fill:#64748b}.node-title{font:700 17px Inter,Arial,sans-serif;fill:#1f2937}.node-body{font:400 13px Inter,Arial,sans-serif;fill:#475569}.node-code{font:600 12px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.5px;fill:#0369a1}.step{font:700 11px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:1.5px;fill:#64748b}.group{fill:#f8fafc;stroke:#94a3b8;stroke-width:1.3}.node-blue{fill:#e0f2fe;stroke:#7dd3fc;stroke-width:1.2}.node-green{fill:#dcfce7;stroke:#86efac;stroke-width:1.2}.node-amber{fill:#fef3c7;stroke:#fcd34d;stroke-width:1.2}.node-violet{fill:#ede9fe;stroke:#c4b5fd;stroke-width:1.2}.flow{fill:none;stroke:#64748b;stroke-width:1.8;marker-end:url(#arrow)}.divider{stroke:#cbd5e1;stroke-width:1.2}
     </style>
   </defs>
-  <rect width="1200" height="720" rx="24" fill="url(#background)"/>
+  <rect width="1600" height="900" fill="#fff"/>
+  <text x="64" y="70" class="eyebrow">TPK4128 · INDUSTRIAL MECHATRONICS</text>
+  <text x="64" y="122" class="page-title">Course learning map</text>
+  <line x1="64" y1="148" x2="1536" y2="148" class="divider"/>
+  <text x="64" y="180" class="subtitle">Selected laboratory work organised by technical progression — not a single integrated system.</text>
 
-  <text x="72" y="70" class="label">TPK4128 · INDUSTRIAL MECHATRONICS</text>
-  <text x="72" y="113" class="title">From low-level code to industrial communication</text>
-  <text x="72" y="145" class="body">Separate laboratory assignments connected by a progressive technical foundation.</text>
+  <rect x="64" y="235" width="488" height="520" rx="10" class="group"/>
+  <text x="88" y="271" class="group-title">1. Computing and networking foundations</text>
+  <text x="88" y="295" class="group-note">Local development, operating-system concepts and network communication</text>
+  <rect x="96" y="335" width="190" height="130" rx="8" class="node-blue"/>
+  <text x="114" y="360" class="step">01</text><text x="114" y="390" class="node-title">Linux &amp; C</text><text x="114" y="417" class="node-code">UTM · Ubuntu · GCC</text><text x="114" y="442" class="node-body">Build and debug locally</text>
+  <rect x="330" y="335" width="190" height="130" rx="8" class="node-blue"/>
+  <text x="348" y="360" class="step">02</text><text x="348" y="390" class="node-title">Systems programming</text><text x="348" y="417" class="node-code">fork · pthread · mutex</text><text x="348" y="442" class="node-body">Memory and concurrency</text>
+  <path d="M286 400H330" class="flow"/>
+  <rect x="212" y="550" width="190" height="140" rx="8" class="node-green"/>
+  <text x="230" y="575" class="step">03</text><text x="230" y="605" class="node-title">TCP/IP sockets</text><text x="230" y="632" class="node-code">client · server · SSH</text><text x="230" y="657" class="node-body">Ubuntu VM ↔ Raspberry Pi</text>
+  <path d="M425 465V505H307V550" class="flow"/>
 
-  <path class="line" d="M294 263H342"/>
-  <path class="line" d="M566 263H614"/>
-  <path class="line" d="M838 263H886"/>
-  <path class="line" d="M998 340V396"/>
-  <path class="line" d="M886 507H838"/>
-  <path class="line" d="M614 507H566"/>
-  <path class="line" d="M342 507H294"/>
+  <rect x="620" y="300" width="360" height="390" rx="10" class="group"/>
+  <text x="644" y="336" class="group-title">2. PLC control</text>
+  <text x="644" y="360" class="group-note">Discrete logic followed by state-based sequencing</text>
+  <rect x="680" y="405" width="240" height="105" rx="8" class="node-amber"/>
+  <text x="698" y="430" class="step">04</text><text x="698" y="460" class="node-title">Ladder Diagram</text><text x="698" y="487" class="node-code">I/O · contacts · coils</text>
+  <rect x="680" y="565" width="240" height="105" rx="8" class="node-amber"/>
+  <text x="698" y="590" class="step">05</text><text x="698" y="620" class="node-title">Sequential Function Chart</text><text x="698" y="647" class="node-code">steps · transitions · timers</text>
+  <path d="M800 510V565" class="flow"/>
 
-  <g transform="translate(70 190)">
-    <rect class="box" width="224" height="150" rx="14"/>
-    <text x="20" y="28" class="num">01</text>
-    <text x="20" y="65" class="step">Linux &amp; C</text>
-    <text x="20" y="96" class="tech">UTM · Ubuntu · GCC</text>
-    <text x="20" y="122" class="body">Build and debug locally</text>
-  </g>
-  <g transform="translate(342 190)">
-    <rect class="box" width="224" height="150" rx="14"/>
-    <text x="20" y="28" class="num">02</text>
-    <text x="20" y="65" class="step">Systems programming</text>
-    <text x="20" y="96" class="tech">fork · pthread · mutex</text>
-    <text x="20" y="122" class="body">Memory and concurrency</text>
-  </g>
-  <g transform="translate(614 190)">
-    <rect class="box" width="224" height="150" rx="14"/>
-    <text x="20" y="28" class="num">03</text>
-    <text x="20" y="65" class="step">TCP/IP sockets</text>
-    <text x="20" y="96" class="tech">client · server · SSH</text>
-    <text x="20" y="122" class="body">VM ↔ Raspberry Pi</text>
-  </g>
-  <g transform="translate(886 190)">
-    <rect class="box" width="244" height="150" rx="14"/>
-    <text x="20" y="28" class="num">04</text>
-    <text x="20" y="65" class="step">PLC logic</text>
-    <text x="20" y="96" class="tech">Ladder · OpenPLC</text>
-    <text x="20" y="122" class="body">Boolean machine control</text>
-  </g>
+  <rect x="1048" y="235" width="488" height="520" rx="10" class="group"/>
+  <text x="1072" y="271" class="group-title">3. Industrial connectivity and middleware</text>
+  <text x="1072" y="295" class="group-note">Control access, telemetry distribution and modular communication</text>
+  <rect x="1080" y="350" width="190" height="130" rx="8" class="node-violet"/>
+  <text x="1098" y="375" class="step">06</text><text x="1098" y="405" class="node-title">OPC UA</text><text x="1098" y="432" class="node-code">browse · methods</text><text x="1098" y="457" class="node-body">Subscriptions and logging</text>
+  <rect x="1314" y="350" width="190" height="130" rx="8" class="node-violet"/>
+  <text x="1332" y="375" class="step">07</text><text x="1332" y="405" class="node-title">MQTT telemetry</text><text x="1332" y="432" class="node-code">publish · broker</text><text x="1332" y="457" class="node-body">Subscribe to sensor data</text>
+  <path d="M1270 415H1314" class="flow"/>
+  <rect x="1197" y="565" width="190" height="130" rx="8" class="node-green"/>
+  <text x="1215" y="590" class="step">08</text><text x="1215" y="620" class="node-title">ROS2</text><text x="1215" y="647" class="node-code">topics · services · actions</text><text x="1215" y="672" class="node-body">Modular communication</text>
+  <path d="M1409 480V525H1292V565" class="flow"/>
 
-  <g transform="translate(886 430)">
-    <rect class="box" width="244" height="150" rx="14"/>
-    <text x="20" y="28" class="num">05</text>
-    <text x="20" y="65" class="step">Sequential control</text>
-    <text x="20" y="96" class="tech">SFC · steps · transitions</text>
-    <text x="20" y="122" class="body">Production-line sequencing</text>
-  </g>
-  <g transform="translate(614 430)">
-    <rect class="box" width="224" height="150" rx="14"/>
-    <text x="20" y="28" class="num">06</text>
-    <text x="20" y="65" class="step">OPC UA</text>
-    <text x="20" y="96" class="tech">methods · subscriptions</text>
-    <text x="20" y="122" class="body">Control and event logging</text>
-  </g>
-  <g transform="translate(342 430)">
-    <rect class="box" width="224" height="150" rx="14"/>
-    <text x="20" y="28" class="num">07</text>
-    <text x="20" y="65" class="step">MQTT telemetry</text>
-    <text x="20" y="96" class="tech">publish · broker · subscribe</text>
-    <text x="20" y="122" class="body">Sensor data distribution</text>
-  </g>
-  <g transform="translate(70 430)">
-    <rect class="box" width="224" height="150" rx="14"/>
-    <text x="20" y="28" class="num">08</text>
-    <text x="20" y="65" class="step">ROS2</text>
-    <text x="20" y="96" class="tech">topics · services · actions</text>
-    <text x="20" y="122" class="body">Modular system communication</text>
-  </g>
-
-  <text x="72" y="655" class="body">CONTROL FOUNDATION</text>
-  <line x1="252" y1="649" x2="948" y2="649" stroke="#263241"/>
-  <text x="970" y="655" class="body">MIDDLEWARE</text>
+  <path d="M552 620H586V495H620" class="flow"/><text x="565" y="472" class="step">PROGRESSION</text>
+  <path d="M980 495H1048" class="flow"/><text x="987" y="472" class="step">PROGRESSION</text>
+  <text x="64" y="832" class="group-note">The arrows describe the course's learning progression. Each block represents separate submitted laboratory work.</text>
 </svg>
