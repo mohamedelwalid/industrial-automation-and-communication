@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Industrial mechatronics course workflow</title>
+  <desc id="desc">A technical workflow showing how the course progressed from a Linux development environment through C, networking, PLC control and industrial communication to documented evidence.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#64748b"/>
+    </marker>
+    <style>
+      .title{font:700 42px Inter,Arial,sans-serif;fill:#111827}.eyebrow{font:700 14px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:2.2px;fill:#0284c7}.subtitle{font:400 18px Inter,Arial,sans-serif;fill:#64748b}.group-title{font:700 18px Inter,Arial,sans-serif;fill:#1f2937}.node-title{font:700 16px Inter,Arial,sans-serif;fill:#1f2937}.node-copy{font:400 13px Inter,Arial,sans-serif;fill:#475569}.code{font:600 11px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.5px;fill:#0369a1}.small{font:600 11px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:1.1px;fill:#64748b}.group{fill:#f8fafc;stroke:#94a3b8;stroke-width:1.2}.blue{fill:#e0f2fe;stroke:#7dd3fc;stroke-width:1.1}.green{fill:#dcfce7;stroke:#86efac;stroke-width:1.1}.amber{fill:#fef3c7;stroke:#fcd34d;stroke-width:1.1}.violet{fill:#ede9fe;stroke:#c4b5fd;stroke-width:1.1}.rose{fill:#ffe4e6;stroke:#fda4af;stroke-width:1.1}.flow{fill:none;stroke:#64748b;stroke-width:1.8;marker-end:url(#arrow)}.line{stroke:#cbd5e1;stroke-width:1.2}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#fff"/>
+  <text x="60" y="66" class="eyebrow">TPK4128 · INDUSTRIAL MECHATRONICS</text>
+  <text x="60" y="118" class="title">Industrial automation learning workflow</text>
+  <line x1="60" y1="146" x2="1540" y2="146" class="line"/>
+  <text x="60" y="179" class="subtitle">Separate laboratory assignments connected by a progressive technical foundation.</text>
+
+  <!-- Development environment -->
+  <rect x="55" y="240" width="300" height="485" rx="10" class="group"/>
+  <text x="79" y="278" class="group-title">Development environment</text>
+
+  <rect x="90" y="325" width="230" height="105" rx="8" class="blue"/>
+  <text x="108" y="353" class="node-title">macOS host</text>
+  <text x="108" y="381" class="code">UTM · Ubuntu VM</text>
+  <text x="108" y="407" class="node-copy">Linux workspace and terminal</text>
+
+  <rect x="90" y="505" width="230" height="105" rx="8" class="green"/>
+  <text x="108" y="533" class="node-title">Raspberry Pi</text>
+  <text x="108" y="561" class="code">SSH · GPIO · DS18B20</text>
+  <text x="108" y="587" class="node-copy">Remote target and sensor source</text>
+
+  <path d="M205 430V505" class="flow"/>
+
+  <!-- Programming and networking -->
+  <rect x="430" y="205" width="375" height="555" rx="10" class="group"/>
+  <text x="454" y="243" class="group-title">Programming and networking</text>
+
+  <rect x="470" y="295" width="295" height="105" rx="8" class="blue"/>
+  <text x="488" y="323" class="node-title">C foundations</text>
+  <text x="488" y="351" class="code">GCC · pointers · memory</text>
+  <text x="488" y="377" class="node-copy">Compile, execute and debug locally</text>
+
+  <rect x="470" y="460" width="295" height="105" rx="8" class="blue"/>
+  <text x="488" y="488" class="node-title">Concurrency</text>
+  <text x="488" y="516" class="code">fork · pthread · mutex</text>
+  <text x="488" y="542" class="node-copy">Processes, threads and synchronisation</text>
+
+  <rect x="470" y="625" width="295" height="105" rx="8" class="green"/>
+  <text x="488" y="653" class="node-title">TCP/IP sockets</text>
+  <text x="488" y="681" class="code">client · server · network test</text>
+  <text x="488" y="707" class="node-copy">Ubuntu VM ↔ Raspberry Pi</text>
+
+  <path d="M617 400V460" class="flow"/>
+  <path d="M617 565V625" class="flow"/>
+  <path d="M355 475H392V347H470" class="flow"/>
+  <path d="M355 558H410V677H470" class="flow"/>
+
+  <!-- Control and communication -->
+  <rect x="880" y="205" width="420" height="555" rx="10" class="group"/>
+  <text x="904" y="243" class="group-title">Control and industrial communication</text>
+
+  <rect x="920" y="285" width="155" height="100" rx="8" class="amber"/>
+  <text x="938" y="313" class="node-title">Ladder</text>
+  <text x="938" y="341" class="code">I/O · coils</text>
+  <text x="938" y="365" class="node-copy">Discrete control</text>
+
+  <rect x="1100" y="285" width="160" height="100" rx="8" class="amber"/>
+  <text x="1118" y="313" class="node-title">SFC</text>
+  <text x="1118" y="341" class="code">steps · timers</text>
+  <text x="1118" y="365" class="node-copy">Sequence control</text>
+
+  <rect x="920" y="455" width="155" height="105" rx="8" class="violet"/>
+  <text x="938" y="483" class="node-title">OPC UA</text>
+  <text x="938" y="511" class="code">methods · events</text>
+  <text x="938" y="537" class="node-copy">Control and logging</text>
+
+  <rect x="1100" y="455" width="160" height="105" rx="8" class="violet"/>
+  <text x="1118" y="483" class="node-title">MQTT</text>
+  <text x="1118" y="511" class="code">pub · broker · sub</text>
+  <text x="1118" y="537" class="node-copy">Sensor telemetry</text>
+
+  <rect x="1010" y="625" width="165" height="105" rx="8" class="green"/>
+  <text x="1028" y="653" class="node-title">ROS2</text>
+  <text x="1028" y="681" class="code">topics · services</text>
+  <text x="1028" y="707" class="node-copy">Modular middleware</text>
+
+  <path d="M1075 335H1100" class="flow"/>
+  <path d="M1180 385V420H997V455" class="flow"/>
+  <path d="M1075 507H1100" class="flow"/>
+  <path d="M1180 560V595H1092V625" class="flow"/>
+  <path d="M805 677H842V335H920" class="flow"/>
+
+  <!-- Evidence -->
+  <rect x="1375" y="265" width="180" height="430" rx="10" class="group"/>
+  <text x="1399" y="303" class="group-title">Evidence</text>
+
+  <rect x="1405" y="350" width="120" height="72" rx="8" class="rose"/>
+  <text x="1425" y="380" class="node-title">Source code</text>
+  <text x="1425" y="404" class="small">C · PYTHON</text>
+
+  <rect x="1405" y="470" width="120" height="72" rx="8" class="amber"/>
+  <text x="1425" y="500" class="node-title">PLC files</text>
+  <text x="1425" y="524" class="small">LD · SFC</text>
+
+  <rect x="1405" y="590" width="120" height="72" rx="8" class="violet"/>
+  <text x="1425" y="620" class="node-title">Data output</text>
+  <text x="1425" y="644" class="small">CSV · LOGS</text>
+
+  <path d="M1300 335H1340V386H1405" class="flow"/>
+  <path d="M1300 507H1350V506H1405" class="flow"/>
+  <path d="M1300 677H1340V626H1405" class="flow"/>
+
+  <text x="60" y="836" class="node-copy">The arrows communicate learning progression and evidence flow; they do not claim that every assignment formed one deployed system.</text>
+</svg>

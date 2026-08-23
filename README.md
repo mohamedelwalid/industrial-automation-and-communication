@@ -10,7 +10,7 @@ connected: low-level programming provides the foundation, network protocols
 move data between devices, PLC languages describe machine behaviour, and
 industrial middleware exposes control and telemetry to higher-level software.
 
-![Course learning path](results/diagrams/course-learning-path.svg)
+![Industrial automation learning workflow](results/diagrams/industrial-mechatronics-workflow.svg)
 
 ## What the coursework covered
 
