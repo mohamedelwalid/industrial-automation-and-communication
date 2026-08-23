@@ -1,0 +1,17 @@
+.DS_Store
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.log
+networking/tcp-ip/client/socket_client
+networking/tcp-ip/server/socket_server
+.vscode/
+.idea/
+
+# Local verification artefacts
+*.out
+*.pid
+data/generated/
