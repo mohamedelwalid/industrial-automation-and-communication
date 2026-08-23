@@ -59,15 +59,10 @@ echo "[4/5] Checking Python and MQTT dry-run"
 python3 -m compileall -q "$repo_root/opc-ua" "$repo_root/messaging"
 python3 "$repo_root/messaging/mqtt/publisher/publisher.py" --simulate 22.5 --count 1 --dry-run
 
-echo "[5/5] Validating PLCopen XML"
-if command -v xmllint >/dev/null 2>&1; then
-  xmllint --noout \
-    "$repo_root/plc/ladder/original/plc.xml" \
-    "$repo_root/plc/ladder/repaired/plc.xml" \
-    "$repo_root/plc/sfc/source/plc.xml" \
-    "$repo_root/plc/sfc/source/beremiz.xml"
-else
-  echo "xmllint is unavailable; XML validation skipped"
-fi
+echo "[5/5] Checking original PLC evidence"
+test -s "$repo_root/plc/ladder/ld-schematic.png"
+test -s "$repo_root/plc/ladder/ld-variable-table.png"
+test -s "$repo_root/plc/sfc/sfc-schematic.png"
+test -s "$repo_root/plc/sfc/sfc-variable-table.png"
 
 echo "Local verification passed"

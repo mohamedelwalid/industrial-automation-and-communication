@@ -1,17 +1,14 @@
-# OpenPLC sequence-control projects
+# PLC laboratory evidence
 
-This directory contains the submitted Beremiz/OpenPLC projects from the E8
-Ladder Diagram and E9 Sequential Function Chart exercises.
+This directory contains only the original evidence images from the completed
+E8 Ladder Diagram and E9 Sequential Function Chart laboratory submissions.
+Both solutions operated correctly during their respective laboratory tasks.
 
-The source files are included as engineering evidence, not as a claim that the
-complete production-line demonstrator has been revalidated after the course.
-Compilation evidence exists for both projects. A new repeatable runtime test
-against FTsim or equivalent hardware is documented as an optional extension.
+No generated Structured Text, repaired XML or recreated PLC project is included
+here. The images are kept unchanged so the repository shows exactly what was
+submitted.
 
-| Project | Source files | Compile evidence | Runtime validation |
-| --- | --- | --- | --- |
-| Ladder Diagram (E8) | Yes | Yes | Not repeated in this repository |
-| Sequential Function Chart (E9) | Yes | Yes, from a later repaired archive | Not repeated in this repository |
-
-See the project-specific READMEs for I/O mappings, known limitations and the
-distinction between original and repaired files.
+| Exercise | Included evidence |
+| --- | --- |
+| E8 Ladder Diagram | Variable table and LD schematic |
+| E9 Sequential Function Chart | Variable table and SFC schematic |

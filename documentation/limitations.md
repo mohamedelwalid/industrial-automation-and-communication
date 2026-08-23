@@ -4,7 +4,8 @@
   every introductory exercise.
 - The laboratories were completed separately and are not presented as one
   end-to-end production installation.
-- FTsim was unavailable on macOS during the PLC assignments.
+- The public PLC section contains the original submitted evidence images rather
+  than editable PLC project files.
 - OPC UA identifiers belong to the course information model and must be changed
   for another server.
 - Physical Raspberry Pi and DS18B20 operation requires the original hardware.

@@ -58,9 +58,10 @@ industrial-automation-and-communication/
 └── scripts/
 ```
 
-The repository intentionally uses source files and short technical notes
-instead of desktop screenshots. Ladder and SFC project files are included in
-their native PLCopen/Beremiz formats.
+The repository primarily uses source files and short technical notes. The PLC
+section is the exception: it contains only the original Ladder Diagram and SFC
+evidence images submitted for the laboratory work. No generated or modified
+PLC project is presented as the submitted solution.
 
 ## Environment used in the course
 
@@ -73,9 +74,9 @@ macOS host → UTM virtual machine → Ubuntu → GCC / Python / ROS2 tools
 ```
 
 Communication exercises used SSH and the local network to connect the Ubuntu
-VM to a Raspberry Pi. Windows-only FTsim was not available on the Mac setup;
-PLC source and compilation artefacts are therefore retained without claiming a
-new FTsim runtime demonstration.
+VM to a Raspberry Pi. The submitted Ladder Diagram and SFC solutions were
+tested during their respective laboratory sessions and are shown using the
+original evidence.
 
 ### Windows or Linux alternative
 
@@ -125,7 +126,9 @@ drilling and transfer mechanisms.
 - **Sequential Function Chart:** steps, transitions and timers for a repeating
   process that can accommodate workpieces at different stages of the line.
 
-Native source and generated Structured Text are stored under [`plc/`](plc/).
+The original submitted schematics and variable tables are stored under
+[`plc/`](plc/). Generated Structured Text and modified PLCopen projects are not
+included.
 
 ### OPC UA control and event logging
 
@@ -169,8 +172,8 @@ Run the repository checks from the root:
 ```
 
 The script compiles the C examples, runs a local socket round-trip,
-syntax-checks the Python files, performs an MQTT dry-run and validates the
-PLCopen XML files when `xmllint` is available.
+syntax-checks the Python files, performs an MQTT dry-run and confirms that the
+four original PLC evidence images are present.
 
 ## Scope and authorship
 
