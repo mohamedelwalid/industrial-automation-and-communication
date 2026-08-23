@@ -73,9 +73,7 @@ macOS host → UTM virtual machine → Ubuntu → GCC / Python / ROS2 tools
 ```
 
 Communication exercises used SSH and the local network to connect the Ubuntu
-VM to a Raspberry Pi. Windows-only FTsim was not available on the Mac setup;
-PLC source and compilation artefacts are therefore retained without claiming a
-new FTsim runtime demonstration.
+VM to a Raspberry Pi. 
 
 ### Windows or Linux alternative
 
